@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario sobre Brawl Stars</title>
+</head>
+<body background="C:\Users\luismi\Desktop\martiluismiguel\fotos\fondo3.jpg">
+  <h1>Encuesta sobre Brawl Stars</h1>
+  <form action="procesar_formulario.php" method="post">
+
+    <label for="inicio_juego">¿Desde cuándo juegas Brawl Stars?</label><br>
+    <select id="inicio_juego" name="inicio_juego" required>
+      <option value="">Selecciona una opción</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="nunca">Nunca he jugado Brawl Stars</option>
+    </select><br><br>
+
+    <label for="nombre">Nombre del jugador</label><br>
+    <input type="text" id="nombre" name="nombre" maxlength="50" placeholder="Nombre" ><br><br>
+
+    <label for="id_brawlstars">ID de Brawl Stars</label><br>
+    <input type="text" id="id_brawlstars" name="id_brawlstars" placeholder="#"><br><br>
+
+    <label for="copas">¿Cuántas copas tienes?</label><br>
+    <input type="number" id="copas" name="copas" placeholder="Copas"><br><br>
+
+    <label for="brawlers">¿Cuántos brawlers tienes?</label><br>
+    <input type="number" id="brawlers" name="brawlers" placeholder="Brawlers"><br><br>
+
+    <label for="brawler_favorito">¿Cuál es tu brawler favorito?</label><br>
+    <input type="text" id="brawler_favorito" name="brawler_favorito" placeholder="Brawler favorito" ><br><br>
+
+    <label for="modo_favorito">¿Cuál es tu modo de juego favorito?</label><br>
+    <input type="text" id="modo_favorito" name="modo_favorito" placeholder="Modo favorito" ><br>
+
+    <br><label>¿Has metido dinero en el juego?</label><br>
+    <input type="radio" id="dinero_no" name="dinero" value="no" required>
+    <label for="dinero_no">No</label><br>
+    <input type="radio" id="dinero_si" name="dinero" value="si">
+    <label for="dinero_si">Sí</label><br><br>
+
+    <label>Si has gastado dinero, ¿cuánto?</label><br>
+    <select name="rango_dinero">
+      <option value="1-10">1-10 €</option>
+      <option value="11-20">11-20 €</option>
+      <option value="21-49">21-49 €</option>
+      <option value="50+">50+ €</option>
+    </select><br><br>
+
+    <label for="opinion">¿Cuál es tu opinión sobre el juego?</label><br>
+    <textarea id="opinion" name="opinion" rows="5" placeholder="Opinión..."></textarea><br><br>
+
+    <label for="sugerencias">Sugerencias/mejoras que te gustaría para el juego...</label><br>
+    <textarea id="sugerencias" name="sugerencias" rows="4" placeholder="Escribe aquí..."></textarea><br><br>
+
+    <label for="nota">Califica el juego del 1 al 10:</label><br>
+    <select id="nota" name="nota" required>
+      <option value="">Nota</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select><br><br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Restablecer</button>
+    <button type="button" onclick="alert('¿Sabías que Brawl Stars, en su lanzamiento beta, se jugaba en modo vertical?')">Dato curioso</button>
+  </form>
+
+  <br><br><a href="C:\Users\luismi\Desktop\martiluismiguel\paginas\aw_ut2_01.html" >Volver al inicio</a>
+  <br><br><a href="C:\Users\luismi\Desktop\martiluismiguel\paginas\aw_ut2_02.html" >Tipos de brawlers</a>
+  
+</body>
+</html>
